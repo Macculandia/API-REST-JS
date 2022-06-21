@@ -16,5 +16,8 @@
 	"bugs": {
 		"url": "https://github.com/Macculandia/API-REST-JS/issues"
 	},
-	"homepage": "https://github.com/Macculandia/API-REST-JS#readme"
+	"homepage": "https://github.com/Macculandia/API-REST-JS#readme",
+	"dependencies": {
+		"axios": "^0.27.2"
+	}
 }
