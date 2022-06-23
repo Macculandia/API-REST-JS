@@ -1,6 +1,6 @@
-searchFormBtn.addEventListener("click", () => {
-	location.hash = "#search=" + searchFormInput.value;
-});
+searchFormBtn.addEventListener("click", (e) =>
+	searchFormInput.value !== "" ? (location.hash = "search=" + searchFormInput.value) : e.preventDefault()
+);
 trendingBtn.addEventListener("click", () => {
 	location.hash = "#trends";
 });
@@ -88,6 +88,10 @@ function movieDetailsPage() {
 	categoriesPreviewSection.classList.add("inactive");
 	genericSection.classList.add("inactive");
 	movieDetailSection.classList.remove("inactive");
+
+	const [_, movieId] = location.hash.split("=");
+
+	getMovieById(movieId);
 }
 
 function searchPage() {
