@@ -1,10 +1,9 @@
+let maxPage;
 let page = 1;
 let infiniteScroll;
 
 searchFormBtn.addEventListener("click", (e) =>
-	searchFormInput.value !== ""
-		? (location.hash = "search=" + searchFormInput.value)
-		: e.preventDefault()
+	searchFormInput.value !== "" ? (location.hash = "search=" + searchFormInput.value) : e.preventDefault()
 );
 trendingBtn.addEventListener("click", () => {
 	location.hash = "#trends";
