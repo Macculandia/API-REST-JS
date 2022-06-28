@@ -211,5 +211,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Secrets.ja (API KEY)
-src/secrets.js
+# # Secrets.ja (API KEY)
+# src/secrets.js
